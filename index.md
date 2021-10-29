@@ -37,7 +37,7 @@ Step 3: Choose the content you wish to be imported and click **Import**.
 ## Changing URL in Database
 
 ### CLI:
-Step 1: First, log into your server via SSH.
+Step 1: First, log into your server via **SSH**.
 
 Step 2: Next, navigate to your WordPress directory. Make sure to change your username to your Shell user.
 
