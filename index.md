@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+# WP_TRANSFER_STEPS
 
-You can use the [editor on GitHub](https://github.com/Skillnter/WP_TRANSFER_STEPS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## WordPress Import/Export
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Export:
+Step 1: Go to Tools and select Export.
 
-### Markdown
+Step 2: Once choosing which type you want to export, click Download Export File to receive the exported file.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Import:
+Step 1: Open your WordPress Dashboard, click Tools and select Import.
 
-```markdown
-Syntax highlighted code block
+Step 2: Install the Importer plugin
 
-# Header 1
-## Header 2
-### Header 3
+Step 3: Import content data
 
-- Bulleted
-- List
+Finally, please choose to Submit to run the data import process.
 
-1. Numbered
-2. List
+## Elementor Import/Export Kit
+Activate the Import / Export experiment via Elementor > Settings > Experiments.
 
-**Bold** and _Italic_ and `Code` text
+### Export:
+Step 1: Go to Elementor > Tools and select Export a Template Kit
+Step 2: Select Template Options and provide a name & description
+Step 3: Click Export
 
-[Link](url) and ![Image](src)
+### Import:
+Step 1: Go to Elementor > Tools and select Import a Template Kit
+
+Step 2: Drag & Drop your Export_Kit.zip file to the area provided, or click to select the .zip file from your local computer
+
+Step 3: Choose the content you wish to be imported and click Import.
+
+
+## Changing URL in Database
+
+### CLI:
+Step 1: First, log into your server via SSH.
+
+Step 2: Next, navigate to your WordPress directory. Make sure to change your username to your Shell user.
+
+Step 3: In your site's directory, you can use wp-cli to update the URLs using the following command.
+
+``` shell
+$ wp search-replace http://example.com https://example.com/blog --dry-run
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Note: If the changes make sense to you, then run the above command again without the dry-run call.
 
-### Jekyll Themes
+### Plugin( [Better Search Replace plugin][BETTER SEARCH] ):
+Step 1: In your Dashboard, navigate to the plugin under Tools > Better Search Replace.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Skillnter/WP_TRANSFER_STEPS/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Step 2: Click the Search/Replace tab
 
-### Support or Contact
+Step 3: In the first field titled "Search for", enter your current URL.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Step 4: In the second field titled "Replace with", enter your new URL.
+
+
+[BETTER SEARCH]:https://wordpress.org/plugins/better-search-replace/
