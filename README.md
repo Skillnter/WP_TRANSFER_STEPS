@@ -58,5 +58,7 @@ Step 3: In the first field titled **Search for**, enter your current URL.
 
 Step 4: In the second field titled **Replace with**, enter your new URL.
 
+Step 5: Click Run **Search/Replace**.
+
 
 [BETTER SEARCH]:https://wordpress.org/plugins/better-search-replace/
