@@ -47,7 +47,7 @@ Step 3: In your site's directory, you can use wp-cli to update the URLs using th
 $ wp search-replace http://example.com https://example.com/blog --dry-run
 ```
 
-Note: If the changes make sense to you, then run the above command again without the dry-run call.
+**Note**: *If the changes make sense to you, then run the above command again without the dry-run call.*
 
 ### Plugin( [Better Search Replace plugin][BETTER SEARCH] ):
 Step 1: In your Dashboard, navigate to the plugin under Tools > Better Search Replace.
