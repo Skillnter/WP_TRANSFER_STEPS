@@ -21,7 +21,9 @@ Activate the Import / Export experiment via Elementor > Settings > Experiments.
 
 ### Export:
 Step 1: Go to Elementor > Tools and select Export a Template Kit
+
 Step 2: Select Template Options and provide a name & description
+
 Step 3: Click Export
 
 ### Import:
